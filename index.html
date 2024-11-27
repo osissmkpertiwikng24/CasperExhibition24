@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Casper Exhibition</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="container">
+    <!-- Header Section -->
+    <header>
+      <img src="logo.png" alt="Logo SMK Pertiwi Kuningan" class="logo">
+      <h1>✨Casper Exhibition🔥</h1>
+      <h2>"Come Back To The Game"</h2>
+    </header>
+
+    <!-- Buttons Section -->
+    <div class="button-section">
+      <div class="button" onclick="openRegistrationPopup()">
+        <h3>Pendaftaran</h3>
+        <p>( Untuk melakukan registrasi )</p>
+      </div>
+      <div class="button" onclick="openSlidePage()">
+        <h3>Juknis & Informasi</h3>
+        <p>( Deskripsi dan informasi seputar Casper Exhibition )</p>
+      </div>
+      <div class="button" onclick="window.open('https://linktwibonze.com', '_blank')">
+        <h3>Twibonze & Surat Pendukung</h3>
+        <p>( Untuk twibonze acara dan surat pendukung )</p>
+      </div>
+    </div>
+
+    <!-- Separator Line -->
+    <div class="separator"></div>
+
+    
+    <div class="contact-section">
+      <div class="button" onclick="window.open('https://wa.me/+6283849794371?text=permisi kak mau bertanya tentang Casper Exhibition', '_blank')">
+        <h3>Kontak Person</h3>
+        <p class="kontak">( Untuk mengajukan pertanyaan & jika terdapat kendala )</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Registration Popup -->
+  <div class="popup" id="registrationPopup">
+    <div class="popup-content">
+      <button class="close-popup" onclick="closeRegistrationPopup()">✖</button>
+      <h2>Link Pendaftaran</h2>
+      <div class="popup-buttons">
+        <div class="popup-button" onclick="window.open('https://forms.gle/UJ11afLTCAmpQgbc9', '_blank')">
+          <h3>E-Sport Mobile Legends</h3>
+          <p>( Untuk Kategori SMP sederajat - SMA sederajat - Umum )</p>
+        </div>
+        <div class="popup-button" onclick="window.open('https://forms.gle/eASV7z53kmXfYGcC9', '_blank')">
+          <h3>( E-Sport Free Fire</h3>
+          <p>Untuk kategori SMP sederajat - SMA sederajat - Umum )</p>
+        </div>
+        <div class="popup-button" onclick="window.open('https://forms.gle/DXfc1o3SBwHFRUJc8', '_blank')">
+          <h3>Cosplay</h3>
+          <p>( Cosplay Karakter Free Fire & Mobile Legend [Untuk Umum] )</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Slide Page -->
+  <div class="slide-page" id="slidePage">
+    <div class="slide-header">
+      <h2>Informasi</h2>
+      <button onclick="closeSlidePage()">Tutup</button>
+    </div>
+    <div class="slide-content">
+      <div class="slide-card">
+        <img src="pf.png" alt="Poster 1">
+        <div class="card-text">
+          <h3>Casper Exhibition</h3>
+          <p>Perlombaan E-Sport terbuka yang di adakan di SMK Pertiwi Kuningan dan di ikuti pelajar tingkat SMP Sederajat, SMA sederajat, hingga peserta umum se wilayah 3 cirebon, dengan 3 kategori perlombaan:</p>
+          <ul>
+            <li>E-Sport Free Fire</li>
+            <li>E-Sport Mobile Legend</li>
+            <li>Cosplay (Karakter Free Fire & Mobile Legend)</li>
+          </ul>
+        </div>
+      </div>
+      <div class="slide-card">
+        <div class="card-text">
+          <h3>Roadmap</h3>
+          <p><b>Pendaftaran:</b> 28 Nov - 10 Des 2024<br>
+          <b>Pelaksanaan:</b> 20-22 Des 2024
+          <br><b>Tempat: </b> SMK Pertiwi Kuningan<br>
+          <br><B>Kategori</B>
+          <br>1.SMP/MTs sederajat (gratis)
+          <br>2.SMA/SMK sederajat (gratis)
+          <br>3.Umum (berbayar) 
+          </p>
+        </div>
+      </div>
+      <div class="slide-card">
+        <div class="card-text">
+          <h3>Juknis Acara</h3>
+          <p>Hal-hal penting yang perlu diketahui peserta sebelum mengikuti acara ini.</p>
+        </div>
+        
+      </div>
+    </div>
+    
+  </div>
+  <footer class="footer">
+  <div class="marquee-text">
+    &copy; 2024 OSIS SMK PERTIWI KUNINGAN | Developed By @Rio3zN9 - Student Of SMK Pertiwi Kuningan | We're wait you for come back to the game and be the champhion so lets build your journey in this champhion with SMK Pertiwi Kuningan🔥 - 
+  </div>
+</footer>
+  <script src="script.js"></script>
+</body>
+</html>

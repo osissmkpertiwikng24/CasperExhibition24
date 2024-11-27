@@ -1,0 +1,298 @@
+/* Global Styles */
+/* Reset dasar untuk teks */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@media (max-width: 768px) {
+    .button-section {
+        flex-direction: column;
+    }
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 20px;
+  background-image: url('bg.png');
+  background-size: cover;
+  color: #fff;
+  overflow-x: hidden;
+  background-repeat: none;
+  display: center;
+  justify-content: center;
+
+}
+
+.container {
+  text-align: center;
+  padding: 20px;
+}
+
+header {
+  margin-bottom: 40px;
+  justify-content: center;
+}
+
+header .logo {
+  width: 130px;
+  margin-bottom: 1px;
+}
+
+header h1, header h2, {
+  white-space: nowrap;
+  display: center;
+}
+
+header h1 {
+  font-size: 1.6rem;
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+header h2 {
+  font-size: 1.1rem;
+  font-weight: 400;
+  color: #cce7ff;
+  white-space: nowrap;
+}
+
+/* Buttons Section */
+.button-section, .contact-section {
+  flex-wrap: wrap;
+  justify-content: center;
+  display: flex; 
+  flex-direction: column; 
+  align-items: center; 
+  gap: 25px;
+}
+
+.button {
+  background: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(10px);
+  padding: 20px 30px;
+  border-radius: 15px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+  transition: transform 0.3s, box-shadow 0.3s;
+  width: 90%; 
+  max-width: 330px;
+  text-align: center;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  
+}
+
+.button:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.5);
+}
+
+.button h3 {
+  font-size: 1.3rem;
+  margin: 0;
+  font-weight: 600;
+  text-overflow: ellipsis;
+  display: center;
+}
+
+.button p {
+  margin-top: 10px;
+  font-size: 0.7rem;
+  color: #000000;
+  font-family: 'Poppins', sans-serif;
+  -webkit-font-smoothing: antialiased; 
+  -moz-osx-font-smoothing: grayscale; 
+}
+
+/* Separator Line */
+.separator {
+  margin: 30px auto;
+  width: 80%;
+  height: 3px;
+  background: rgba(255, 255, 255, 0.3);
+}
+
+/* Popup Styles */
+.popup {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('bg.png');
+  background-size: cover;
+  background-repeat: none;
+  z-index: 1000;
+  justify-content: center;
+  align-items: center;
+}
+
+.popup-content {
+  background: #ffffff90 ;
+  padding: 30px;
+  border-radius: 15px;
+  width: 90%;
+  max-width: 500px;
+  text-align: center;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.5);
+  color: #333;
+}
+
+.popup-content h2 {
+  margin-bottom: 20px;
+  font-size: 1.8rem;
+}
+
+.popup-buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.popup-button {
+  background: #000000ac;
+  border: 1px solid #000000;
+  padding: 15px;
+  border-radius: 10px;
+  text-align: left;
+  cursor: pointer;
+  transition: background 0.3s;
+  color: #333;
+} 
+
+.popup-button:hover {
+  background: #e0e0e09f;
+}
+
+.popup-button h3 {
+  font-size: 1.3rem;
+  margin: 0;
+  color: white;
+}
+
+.popup-button p {
+  color: white;
+  font-size: 1rem;
+  margin-top: 8px;
+}
+
+.close-popup {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  background: none;
+  border: none;
+  font-size: 1.2rem;
+  cursor: pointer;
+  color: #333;
+}
+
+/* Slide Page */
+.slide-page {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('bg.png');
+  background-size: cover;
+  background-repeat: none;
+  color: #fff;
+  z-index: 1000;
+  padding: 20px;
+  overflow-y: auto;
+}
+
+.slide-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.slide-header h2 {
+  font-size: 2rem;
+  margin: 0;
+}
+
+.slide-header button {
+  background: #ff5a5f;
+  border: none;
+  padding: 10px 20px;
+  color: #fff;
+  font-size: 1rem;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.slide-header button:hover {
+  background: #ff1e26;
+}
+
+/* 3D Card Effects */
+.slide-card {
+  background: #ffffff92;
+  color: #333; 
+  border-radius: 15px;
+  padding: 20px;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.3);
+  width: 100%;
+  max-width: 400px;
+  margin: 10px auto;
+  text-align: left;
+  transform: perspective(1000px) rotateY(0deg);
+  transition: transform 0.5s;
+}
+
+.slide-card:hover {
+  transform: perspective(1000px) rotateY(15deg);
+}
+
+.slide-card img {
+  width: 100%;
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+
+.slide-card .card-text h3 {
+  font-size: 1.5rem;
+  margin: 0 0 10px;
+}
+
+.slide-card .card-text p {
+  font-size: 1rem;
+  margin: 0;
+}
+
+.footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #3333336c;
+    color: #fff;
+    text-align: center;
+    padding: 5px 0;
+    font-size: 0.5rem;
+    z-index: 999; 
+  }
+
+  .marquee-text {
+    display: inline-block;
+    white-space: nowrap;
+    animation: scrollLeft 15s linear infinite;
+  }
+
+  @keyframes scrollLeft {
+    from {
+      transform: translateX(100%);
+    }
+    to {
+      transform: translateX(-100%);
+    }
+  }
