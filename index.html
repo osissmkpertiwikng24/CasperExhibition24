@@ -19,15 +19,15 @@
 
     <!-- Buttons Section -->
     <div class="button-section">
-      <div class="button" onclick="openRegistrationPopup()">
+      <div id="myDivButton" class="button" onclick="openRegistrationPopup()">
         <h3>Pendaftaran</h3>
         <p>( Untuk melakukan registrasi )</p>
       </div>
-      <div class="button" onclick="openSlidePage()">
+      <div id="myButton" id="myButton" class="button"  onclick="openSlidePage()">
         <h3>Juknis & Informasi</h3>
         <p>( Deskripsi dan informasi seputar Casper Exhibition )</p>
       </div>
-      <div class="button" onclick="window.open('https://linktwibonze.com', '_blank')">
+      <div id="myButton" class="button" onclick="window.open('https://linktwibonze.com', '_blank')">
         <h3>Twibonze & Surat Pendukung</h3>
         <p>( Untuk twibonze acara dan surat pendukung )</p>
       </div>
@@ -38,7 +38,7 @@
 
     
     <div class="contact-section">
-      <div class="button" onclick="window.open('https://wa.me/+6283849794371?text=permisi kak mau bertanya tentang Casper Exhibition', '_blank')">
+      <div class="button" onclick="window.open('https://wa.me/+62 821-2192-1210?text=permisi kak mau bertanya tentang Casper Exhibition', '_blank')">
         <h3>Kontak Person</h3>
         <p class="kontak">( Untuk mengajukan pertanyaan & jika terdapat kendala )</p>
       </div>
@@ -49,7 +49,7 @@
   <div class="popup" id="registrationPopup">
     <div class="popup-content">
       <button class="close-popup" onclick="closeRegistrationPopup()">✖</button>
-      <h2>Link Pendaftaran</h2>
+      <h2>| Link Pendaftaran |</h2>
       <div class="popup-buttons">
         <div class="popup-button" onclick="window.open('https://forms.gle/UJ11afLTCAmpQgbc9', '_blank')">
           <h3>E-Sport Mobile Legends</h3>
@@ -99,13 +99,34 @@
           </p>
         </div>
       </div>
-      <div class="slide-card">
-        <div class="card-text">
-          <h3>Juknis Acara</h3>
-          <p>Hal-hal penting yang perlu diketahui peserta sebelum mengikuti acara ini.</p>
-        </div>
-        
+       <div class="slide-card">
+      <div class="card-text">
+        <h3>Juknis Mobile Legend</h3>
+        <p id="mlText"><b>KETENTUAN UMUM:</b><br>Peserta adalah perwakilan siswa/siswi SMP/MTs, SMA/SMK/MA...
+          <span class="read-more" onclick="toggleText('mlText')">Lihat Selengkapnya</span>
+        </p>
       </div>
+    </div>
+
+    <div class="slide-card">
+      <div class="card-text">
+        <h3>Juknis Free Fire</h3>
+        <p id="ffText"><b>SYARAT PESERTA: </b><br>
+        Peserta adalah perwakilan siswa/siswi SMP/MTs, SMA/SMK/MA... 
+          <span class="read-more" onclick="toggleText('ffText')">Lihat Selengkapnya</span>
+        </p>
+      </div>
+    </div>
+    
+    <div class="slide-card">
+      <div class="card-text">
+        <h3>Juknis Cosplay</h3>
+        <p id="cpText"><b>KETENTUAN UMUM: </b><br>
+        Perlombaan ini terbuka untuk eksternal atau....
+        <span class="read-more" onclick="toggleText('cpText')">Lihat Selengkapnya</span>
+        </p>
+      </div>
+    </div>
     </div>
     
   </div>
@@ -114,6 +135,12 @@
     &copy; 2024 OSIS SMK PERTIWI KUNINGAN | Developed By @Rio3zN9 - Student Of SMK Pertiwi Kuningan | We're wait you for come back to the game and be the champhion so lets build your journey in this champhion with SMK Pertiwi Kuningan🔥 - 
   </div>
 </footer>
+
+<audio id="click-sound">
+    <source src="click2.mp3" type="audio/mpeg">
+</audio>
+
   <script src="script.js"></script>
 </body>
-</html>
+    </html>
+    
