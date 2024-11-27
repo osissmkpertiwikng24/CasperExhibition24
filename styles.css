@@ -143,7 +143,7 @@ header h2 {
 
 .popup-content h2 {
   margin-bottom: 20px;
-  font-size: 1.8rem;
+  font-size: 1.4rem;
 }
 
 .popup-buttons {
@@ -185,9 +185,9 @@ header h2 {
   right: 15px;
   background: none;
   border: none;
-  font-size: 1.2rem;
+  font-size: 1.5rem;
   cursor: pointer;
-  color: #333;
+  color: #e33333;
 }
 
 /* Slide Page */
@@ -296,3 +296,19 @@ header h2 {
       transform: translateX(-100%);
     }
   }
+ 
+ /* Style untuk teks yang tersembunyi */
+.read-more {
+  color: #007bff;
+  cursor: pointer;
+  font-size: 0.9rem;
+}
+
+.hidden-text {
+  display: none;
+  white-space: pre-line;
+}
+
+.visible-text {
+  display: inline;
+}
