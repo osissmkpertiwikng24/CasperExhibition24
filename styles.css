@@ -47,13 +47,15 @@ header h1, header h2, {
 }
 
 header h1 {
-  font-size: 1.6rem;
+  font-size: 1.2rem;
   font-weight: 600;
   white-space: nowrap;
+  display: flex;
+  justify-content: center;
 }
 
 header h2 {
-  font-size: 1.1rem;
+  font-size: 1rem;
   font-weight: 400;
   color: #cce7ff;
   white-space: nowrap;
@@ -122,7 +124,7 @@ header h2 {
   left: 0;
   width: 100%;
   height: 100%;
-  background-image: url('bg.png');
+  background: rgba(0,0,0,0.416);
   background-size: cover;
   background-repeat: none;
   z-index: 1000;
@@ -131,14 +133,14 @@ header h2 {
 }
 
 .popup-content {
-  background: #ffffff90 ;
+  background: #ffffffe0 ;
   padding: 30px;
   border-radius: 15px;
   width: 90%;
   max-width: 500px;
   text-align: center;
   box-shadow: 0 10px 40px rgba(0, 0, 0, 0.5);
-  color: #333;
+  color: #0c1ef3;
 }
 
 .popup-content h2 {
@@ -153,10 +155,10 @@ header h2 {
 }
 
 .popup-button {
-  background: #000000ac;
-  border: 1px solid #000000;
+  background: #378ef7ea;
+  border: 1px solid #3388f5;
   padding: 15px;
-  border-radius: 10px;
+  border-radius: 20px;
   text-align: left;
   cursor: pointer;
   transition: background 0.3s;
