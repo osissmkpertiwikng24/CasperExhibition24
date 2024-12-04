@@ -176,7 +176,23 @@ document.addEventListener('DOMContentLoaded', () => {
 
     document.getElementById('click-sound').volume = 0.035; // Volume maksimal
     
-    
+    // Menampilkan Popup
+function openTwibonze() {
+  document.getElementById("twibonzePopup").classList.remove("hidden");
+}
+
+// Menutup Popup
+function closeTwibonze() {
+  document.getElementById("twibonzePopup").classList.add("hidden");
+}
+
+// Menutup popup saat klik di luar area konten
+document.getElementById("twibonzePopup").addEventListener("click", function (e) {
+  if (e.target === this) {
+    closeTwibonze();
+  }
+});
+
     
   
   
