@@ -45,7 +45,7 @@ document.addEventListener('DOMContentLoaded', () => {
   mlText.dataset.shortText = 'KETENTUAN UMUM: Peserta adalah perwakilan siswa/siswi SMP/MTs, SMA/SMK/MA...';
   mlText.dataset.fullText = `<b>KETENTUAN UMUM</b><br>
   <ul>
-<li>Peserta adalah perwakilan siswa/siswi SMP/MTs, SMA/SMK/MA Se-Wilayah III Cirebon dan Umum.</li>
+<li>Peserta adalah perwakilan siswa SMA/SMK/MA Se-Wilayah III Cirebon dan Umum.</li>
 <li>Peserta lomba didaftarkan melalui link pendaftaran dari panitia, dan wajib melampirkan foto copy Kartu Identitas Siswa atau Kartu OSIS bagi kategori pelajar.</li>
 <li>Peserta beregu dengan jumlah maksimal 5 orang dengan 1 orang cadangan.</li>
 <li>Setiap pemain wajib memiliki device berupa Android atau iPhone serta akun Mobile Legend sendiri dan bukan milik orang lain.</li>
@@ -88,7 +88,7 @@ document.addEventListener('DOMContentLoaded', () => {
   ffText.dataset.shortText = '<b>SYARAT PESERTA:</b><br> Peserta adalah perwakilan siswa/siswi SMP/MTs, SMA/SMK/MA...';
   ffText.dataset.fullText = `<b>SYARAT PESERTA</b><br>
 <ul>
-    <li>Peserta adalah perwakilan siswa/siswi SMP/MTs, SMA/SMK/MA Se-Wilayah III Cirebon dan Umum.</li><br>
+    <li>Peserta adalah perwakilan siswa SMA/SMK/MA Se-Wilayah III Cirebon dan Umum.</li><br>
     <li>Peserta lomba didaftarkan melalui link pendaftaran dari panitia, dan wajib melampirkan foto copy Kartu Identitas Siswa atau Kartu OSIS bagi kategori pelajar.</li><br>
     <li>Peserta beregu dengan jumlah maksimal 4 orang, 1 untuk cadangan.</li><br>
     <li>Seluruh peserta yang dapat mengikuti turnamen ini hanya yang telah mendaftarkan diri di link yang sudah disediakan oleh panitia.</li><br>\n\n
